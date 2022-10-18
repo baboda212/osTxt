@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //userAgent (모든정보)
+        let info = navigator.userAgent.toLocaleLowerCase();
+        let osTxt = '';
+        console.log(userAgent);
+        
+        //운영체제 판단(디바이스 확인)
+        if(info.indexOf('windows') >= 0) {
+            osTxt = '윈도우';
+        } else if(info.indexOf('macintosh') >= 0){
+            osTxt = '맥킨토시';
+        } else if(info.indexOf('iphone') >= 0){
+            osTxt = '아이폰';
+        } else if(info.indexOf('android') >= 0){
+            osTxt = '안드로이드';
+        }
+        document.write(`${osTxt}입니다`);
+    </script>
+</body>
+</html>
